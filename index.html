@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中学歴史 | 学習ポータル</title>
+    <style>
+        :root {
+            --primary-color: #2b579a;
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .unit-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .unit-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .unit-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .unit-card a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .unit-card p {
+            margin: 0.5rem 0 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #888;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>中学歴史 学習ポータル</h1>
+        <p>定期テスト対策・復習用Web教材</p>
+    </header>
+
+    <main class="container">
+        <h2>単元一覧</h2>
+        <ul class="unit-list">
+            <li class="unit-card">
+                <a href="history_unit1.html">第1章：歴史のあけぼのと古代日本</a>
+                <p>人類の出現から旧石器・縄文・弥生時代、古墳時代までのまとめ</p>
+            </li>
+            <!-- 新しい単元を追加する場合はここに追加します -->
+            <!-- 
+            <li class="unit-card">
+                <a href="history_unit2.html">第2章：飛鳥・奈良・平安時代</a>
+                <p>律令国家の形成と貴族文化</p>
+            </li>
+            -->
+        </ul>
+    </main>
+
+    <footer>
+        &copy; hato810school-code
+    </footer>
+
+</body>
+</html>
