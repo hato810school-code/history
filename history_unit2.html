@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>縄文・弥生時代 穴埋めクイズ</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        p { margin-bottom: 15px; }
+        .blank {
+            display: inline-block;
+            min-width: 80px;
+            padding: 2px 10px;
+            margin: 0 5px;
+            border-bottom: 2px solid #333;
+            background-color: #eee;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            color: transparent; /* 初期状態は透明 */
+            transition: all 0.3s;
+        }
+        .blank.reveal {
+            color: #e74c3c; /* タップ後の色 */
+            background-color: transparent;
+        }
+        .hint { font-size: 0.8em; color: #7f8c8d; margin-top: -10px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>縄文時代・弥生時代 チェックテスト</h1>
+    <p class="hint">※グレーの空欄をタップすると解答が表示されます。</p>
+
+    <h2>1. 縄文時代</h2>
+    <p>約1万年前に氷河時代が終わり、海水面が上昇して<span class="blank" onclick="reveal(this)">日本列島</span>が形成された [1, 2]。</p>
+    <p>人々は、弓矢を使った狩猟や、魚を獲る漁労、植物の採集を中心とした生活を送り、食べかすなどを捨てた場所である<span class="blank" onclick="reveal(this)">貝塚</span>が各地で見られる [1, 3, 4]。</p>
+    <p>住居は、地面を掘り下げて柱を立てた<span class="blank" onclick="reveal(this)">たて穴住居</span>が一般的で、定住が始まった [1, 4]。</p>
+    <p>この時代の土器は、低い温度で焼かれたため<span class="blank" onclick="reveal(this)">厚手でもろく</span>、色は黒褐色をしている [3, 5]。</p>
+
+    <h2>2. 弥生時代の始まりと社会</h2>
+    <p>紀元前4世紀ごろ、九州北部に中国や朝鮮半島から<span class="blank" onclick="reveal(this)">稲作</span>と金属器が伝わった [6, 7]。</p>
+    <p>金属器のうち、<span class="blank" onclick="reveal(this)">青銅器</span>は祭りの宝物などに使われ、鉄器は武器や工具に使われた [6]。</p>
+    <p>稲作によって蓄えができると、人々の間に<span class="blank" onclick="reveal(this)">貧富</span>の差や身分の差が生まれ始めた [6-8]。</p>
+    <p>集落の周囲を堀で囲んだ<span class="blank" onclick="reveal(this)">環濠集落</span>が作られるようになり、佐賀県の<span class="blank" onclick="reveal(this)">吉野ヶ里遺跡</span>が有名である [6, 9, 10]。</p>
+    <p>収穫した米を保存するために、床を高くした<span class="blank" onclick="reveal(this)">高床倉庫</span>が建てられた [6, 9, 11]。</p>
+
+    <h2>3. クニの出現と中国との関わり</h2>
+    <p>57年、倭の<span class="blank" onclick="reveal(this)">奴国</span>の王が中国（後漢）へ使いを送り、<span class="blank" onclick="reveal(this)">金印</span>を授かった [8, 12]。</p>
+    <p>3世紀には、女王の<span class="blank" onclick="reveal(this)">卑弥呼</span>が治める<span class="blank" onclick="reveal(this)">邪馬台国</span>が、30ほどのクニをまとめていた [8, 12]。</p>
+    <p>卑弥呼は239年に中国の魏へ使いを送り、<span class="blank" onclick="reveal(this)">親魏倭王</span>の称号を授かった [8, 12]。</p>
+
+    <h2>4. 土器の比較</h2>
+    <p>縄文土器と比べ、弥生土器は高い温度で焼かれたため<span class="blank" onclick="reveal(this)">薄手で硬い</span>のが特徴である [5, 13]。</p>
+    <p>また、弥生土器は赤褐色で、形はシンプルで<span class="blank" onclick="reveal(this)">実用的</span>なデザインになった [5, 6, 13]。</p>
+</div>
+
+<script>
+    function reveal(element) {
+        element.classList.toggle('reveal');
+    }
+</script>
+
+</body>
+</html>
