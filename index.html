@@ -7,11 +7,11 @@
     <style>
         :root {
             --primary-color: #2b579a;
+            --pdf-color: #d93025;
             --bg-color: #f4f6f9;
             --card-bg: #ffffff;
             --text-color: #333333;
         }
-
         body {
             font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             background-color: var(--bg-color);
@@ -20,7 +20,6 @@
             padding: 0;
             line-height: 1.6;
         }
-
         header {
             background-color: var(--primary-color);
             color: white;
@@ -28,31 +27,26 @@
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
         header h1 {
             margin: 0;
             font-size: 1.8rem;
         }
-
         header p {
             margin: 0.5rem 0 0;
             opacity: 0.9;
             font-size: 0.95rem;
         }
-
-        container {
+        .container {
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
-
         .unit-list {
             list-style: none;
             padding: 0;
             display: grid;
             gap: 1rem;
         }
-
         .unit-card {
             background: var(--card-bg);
             border-radius: 8px;
@@ -60,12 +54,10 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .unit-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
         .unit-card a {
             text-decoration: none;
             color: var(--primary-color);
@@ -73,13 +65,14 @@
             font-size: 1.1rem;
             display: block;
         }
-
+        .unit-card.pdf-card a {
+            color: var(--pdf-color);
+        }
         .unit-card p {
             margin: 0.5rem 0 0;
             color: #666;
             font-size: 0.9rem;
         }
-
         footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -89,40 +82,41 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>中学歴史 学習ポータル</h1>
         <p>定期テスト対策・復習用Web教材</p>
     </header>
-
     <main class="container">
+        <h2>学習資料・PDF</h2>
+        <ul class="unit-list">
+            <li class="unit-card pdf-card">
+                <a href="Ancient_History_Blueprints.pdf" target="_blank" rel="noopener noreferrer">📄 古代史 学習ブループリント（PDFを開く）</a>
+                <p>古代史の全体像をまとめたPDF資料です。タップまたはクリックでブラウザ表示します。</p>
+            </li>
+        </ul>
+
         <h2>単元一覧</h2>
         <ul class="unit-list">
             <li class="unit-card">
                 <a href="history_unit1.html">第1章：人類の出現と古代文明の起こり</a>
                 <p>世界四大文明とギリシャ・ローマの文明</p>
             </li>
-        <ul class="unit-list">
             <li class="unit-card">
                 <a href="history_unit2.html">第2章：縄文時代・弥生時代 チェックテスト</a>
                 <p>稲作の伝来によってムラからクニへ</p>
             </li>
-         <ul class="unit-list">
             <li class="unit-card">
                 <a href="history_unit3.html">第3章：古墳時代・大和政権 チェックテスト</a>
                 <p>大和政権による巨大国家の誕生と、東アジアの国々との関係</p>
             </li>
-         <ul class="unit-list">
             <li class="unit-card">
                 <a href="history_unit4.html">第4章：飛鳥時代〜律令国家の完成 まとめクイズ</a>
                 <p>聖徳太子の政治と飛鳥文化、大化の改新から律令国家へ</p>
             </li>
         </ul>
     </main>
-
     <footer>
         &copy; hato810school-code
     </footer>
-
 </body>
 </html>
