@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古墳時代・大和政権 チェックテスト</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; line-height: 1.8; padding: 20px; background-color: #fdfaf5; color: #333; }
+        .container { max-width: 850px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #4a3728; border-bottom: 3px solid #8b4513; padding-bottom: 10px; text-align: center; }
+        h2 { color: #5d4037; margin-top: 35px; border-left: 5px solid #8b4513; padding-left: 15px; background: #efebe9; }
+        p { margin-bottom: 18px; }
+        .blank {
+            display: inline-block;
+            min-width: 100px;
+            padding: 2px 12px;
+            margin: 0 5px;
+            border-bottom: 2px solid #5d4037;
+            background-color: #d7ccc8;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            color: transparent; /* 初期状態は隠す */
+            transition: all 0.2s ease-in-out;
+            border-radius: 4px;
+        }
+        .blank:hover { background-color: #bcaaa4; }
+        .blank.reveal {
+            color: #d32f2f; /* タップ後の色 */
+            background-color: transparent;
+            border-bottom: 2px solid transparent;
+        }
+        .hint { font-size: 0.9em; color: #795548; text-align: center; margin-bottom: 30px; }
+        .section-box { margin-bottom: 25px; padding: 15px; border: 1px solid #d7ccc8; border-radius: 8px; }
+        ol { padding-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>古墳時代・大和政権 チェックテスト</h1>
+    <p class="hint">※グレーの空欄をタップすると解答が表示されます。</p>
+
+    <h2>第1部：古墳の出現と大和政権</h2>
+    <div class="section-box">
+        <ol>
+            <li>3世紀後半から4世紀にかけて、王や豪族の権力を示す巨大な墓である<span class="blank" onclick="reveal(this)">古墳</span>が造られるようになった。</li>
+            <li>日本特有の鍵穴のような形をした<span class="blank" onclick="reveal(this)">前方後円墳</span>が近畿地方から全国へ広がったことは、近畿の大王を中心とする<span class="blank" onclick="reveal(this)">大和政権</span>（ヤマト王権）の支配や同盟関係が拡大したことを示している。</li>
+            <li>日本最大級の古墳は大阪府にある<span class="blank" onclick="reveal(this)">大仙古墳</span>（仁徳天皇陵）で、その横幅はクフ王のピラミッドや秦の始皇帝の墓をも上回る。</li>
+            <li>古墳の周囲や上部には、素焼きの<span class="blank" onclick="reveal(this)">埴輪</span>が置かれ、儀式や魔除けに用いられた。</li>
+            <li>縄文時代に豊作を願って作られた<span class="blank" onclick="reveal(this)">土偶</span>に対し、<span class="blank" onclick="reveal(this)">埴輪</span>は古墳時代に儀式などの目的で作られたという違いがある。</li>
+        </ol>
+    </div>
+
+    <h2>第2部：東アジアとの交流と「大王」の支配</h2>
+    <div class="section-box">
+        <ol>
+            <li>5世紀頃、大和政権の王は<span class="blank" onclick="reveal(this)">大王</span>と呼ばれるようになり、九州から東北地方に及ぶ広大な地域の豪族を従えていた。</li>
+            <li>埼玉県の稲荷山古墳や熊本県の江田船山古墳から出土した鉄剣には、「<span class="blank" onclick="reveal(this)">ワカタケル大王</span>」の名が刻まれており、支配範囲の広さを裏付けている。</li>
+            <li>中国の歴史書『<span class="blank" onclick="reveal(this)">宋書</span>』には、5世紀頃に大和政権の王である<span class="blank" onclick="reveal(this)">倭の五王</span>が、自らの地位を認めてもらうために中国へ使いを送っていたことが記されている。</li>
+            <li>朝鮮半島では、北部の<span class="blank" onclick="reveal(this)">高句麗</span>、南西部の百済、南東部の新羅が争う三国時代となっていた。</li>
+            <li>大和政権が百済や伽耶（任那）と結んで、高句麗や新羅と戦った様子は、高句麗の<span class="blank" onclick="reveal(this)">好太王碑</span>に刻まれている。</li>
+        </ol>
+    </div>
+
+    <h2>第3部：渡来人がもたらした文化と技術</h2>
+    <div class="section-box">
+        <ol>
+            <li>朝鮮半島から日本列島へ移住した<span class="blank" onclick="reveal(this)">渡来人</span>によって、当時の日本になかった最先端の技術が伝えられた。</li>
+            <li>登り窯を用いて約1000度以上の高温で焼かれた、硬くて青灰色の土器を<span class="blank" onclick="reveal(this)">須恵器</span>という。</li>
+            <li>外交文書の作成や記録のために<span class="blank" onclick="reveal(this)">漢字</span>が使われるようになり、思想面では<span class="blank" onclick="reveal(this)">儒教</span>や仏教が伝来した。</li>
+            <li>このほか、織物や金属加工、池や堤を造る<span class="blank" onclick="reveal(this)">治水・土木</span>技術なども伝わり、生産力が向上した。</li>
+        </ol>
+    </div>
+</div>
+
+<script>
+    function reveal(element) {
+        element.classList.toggle('reveal');
+    }
+</script>
+
+</body>
+</html>
