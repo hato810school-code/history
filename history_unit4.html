@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飛鳥時代〜律令国家の完成 まとめクイズ</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; line-height: 1.8; padding: 20px; background-color: #f0f4f8; color: #333; }
+        .container { max-width: 850px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; text-align: center; }
+        h2 { color: #2980b9; margin-top: 35px; border-left: 6px solid #3498db; padding-left: 15px; background: #e3f2fd; }
+        p { margin-bottom: 18px; }
+        .blank {
+            display: inline-block;
+            min-width: 100px;
+            padding: 2px 10px;
+            margin: 0 5px;
+            border-bottom: 2px solid #2980b9;
+            background-color: #e1f5fe;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            color: transparent; /* 初期は隠す */
+            transition: all 0.2s ease;
+            border-radius: 4px;
+        }
+        .blank:hover { background-color: #b3e5fc; }
+        .blank.reveal {
+            color: #d32f2f; /* タップ後の色 */
+            background-color: transparent;
+            border-bottom: 2px solid transparent;
+        }
+        .hint { font-size: 0.9em; color: #7f8c8d; text-align: center; margin-bottom: 30px; }
+        .section-box { margin-bottom: 25px; padding: 15px; border: 1px solid #d1d9e6; border-radius: 8px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; list-style-type: none; }
+        .keyword-list { padding-left: 0; }
+        .important { font-weight: bold; color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>飛鳥時代〜律令国家の完成 まとめノート</h1>
+    <p class="hint">※青い空欄をタップすると解答が表示されます。</p>
+
+    <h2>1. 聖徳太子の政治と飛鳥文化</h2>
+    <div class="section-box">
+        <p>6世紀末、日本初の女性天皇である<span class="blank" onclick="reveal(this)">推古天皇</span>が即位すると、甥の<span class="blank" onclick="reveal(this)">聖徳太子</span>（厩戸皇子）が<span class="blank" onclick="reveal(this)">摂政</span>となり、豪族の<span class="blank" onclick="reveal(this)">蘇我馬子</span>と協力して改革を始めました。</p>
+        <ul class="keyword-list">
+            <li>・<span class="important">603年：</span><span class="blank" onclick="reveal(this)">冠位十二階</span> … 家柄に関わらず能力のある人物を役人に登用する制度。</li>
+            <li>・<span class="important">604年：</span><span class="blank" onclick="reveal(this)">十七条の憲法</span> … 役人の心得。「和を貴しとなす」という精神。</li>
+            <li>・<span class="important">607年：</span><span class="blank" onclick="reveal(this)">遣隋使</span>の派遣 … <span class="blank" onclick="reveal(this)">小野妹子</span>らを派遣し、隋の進んだ制度を導入。</li>
+        </ul>
+        <p><span class="important">飛鳥文化：</span>日本初の本格的な仏教文化。世界最古の木造建築である<span class="blank" onclick="reveal(this)">法隆寺</span>が有名。</p>
+    </div>
+
+    <h2>2. 大化の改新（乙巳の変）</h2>
+    <div class="section-box">
+        <p>645年、独裁を強めた蘇我氏を倒すため、<span class="blank" onclick="reveal(this)">中大兄皇子</span>と<span class="blank" onclick="reveal(this)">中臣鎌足</span>が<span class="blank" onclick="reveal(this)">蘇我入鹿</span>を暗殺。この事件をきっかけに始まった改革を大化の改新といいます。</p>
+        <ul class="keyword-list">
+            <li>・<span class="important">公地公民：</span>豪族が支配していた土地や人民をすべて国家（天皇）のものとした。</li>
+            <li>・<span class="important">律令制度：</span>中国の唐にならい、法に基づき国を治める仕組みを導入。</li>
+            <li>・<span class="important">税制：</span>米を納める<span class="blank" onclick="reveal(this)">租</span>のほか、調・庸といった全国一律の税を課した。</li>
+        </ul>
+    </div>
+
+    <h2>3. 国家の危機と律令国家の完成</h2>
+    <div class="section-box">
+        <p>663年、百済を助けるための<span class="blank" onclick="reveal(this)">白村江の戦い</span>で唐・新羅の連合軍に大敗。国防のため都を<span class="blank" onclick="reveal(this)">大津宮</span>へ移しました。</p>
+        <p>672年、天智天皇の死後に跡継ぎをめぐって起こった<span class="blank" onclick="reveal(this)">壬申の乱</span>。これに勝利した<span class="blank" onclick="reveal(this)">天武天皇</span>が、日本という国号や天皇の称号を定めました。</p>
+        <p>その後、皇后の<span class="blank" onclick="reveal(this)">持統天皇</span>が<span class="blank" onclick="reveal(this)">藤原京</span>を完成させ、律令国家の基礎が固まりました。</p>
+    </div>
+</div>
+
+<script>
+    function reveal(element) {
+        element.classList.toggle('reveal');
+    }
+</script>
+
+</body>
+</html>
