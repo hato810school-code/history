@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奈良時代 まとめ・穴埋めクイズ</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; line-height: 1.8; padding: 20px; background-color: #f4f6f9; color: #333; }
+        .container { max-width: 850px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        h1 { color: #1b365d; border-bottom: 3px solid #2b6cb0; padding-bottom: 10px; text-align: center; }
+        h2 { color: #2b6cb0; margin-top: 35px; border-left: 6px solid #2b6cb0; padding-left: 15px; background: #ebf8ff; padding-top: 6px; padding-bottom: 6px; border-radius: 0 6px 6px 0; }
+        p { margin-bottom: 16px; }
+        .blank {
+            display: inline-block;
+            min-width: 90px;
+            padding: 2px 10px;
+            margin: 0 4px;
+            border-bottom: 2px solid #2b6cb0;
+            background-color: #e2e8f0;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            color: transparent; /* 初期状態は非表示 */
+            transition: all 0.2s ease;
+            border-radius: 4px;
+        }
+        .blank:hover { background-color: #cbd5e0; }
+        .blank.reveal {
+            color: #e53e3e; /* タップ後の正解表示カラー */
+            background-color: transparent;
+            border-bottom: 2px solid transparent;
+        }
+        .hint { font-size: 0.9em; color: #4a5568; text-align: center; margin-bottom: 30px; }
+        .section-box { margin-bottom: 25px; padding: 20px; border: 1px solid #e2e8f0; border-radius: 10px; background-color: #ffffff; }
+        ul { padding-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 10px; list-style-type: square; }
+        .important { font-weight: bold; color: #1a365d; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>奈良時代 まとめノート＆チェックテスト</h1>
+    <p class="hint">※グレーの空欄をタップすると解答が表示されます。</p>
+
+    <h2>1. 律令国家の仕組みと平城京</h2>
+    <div class="section-box">
+        <p><span class="important">701年：</span>文武天皇のもとで<span class="blank" onclick="reveal(this)">大宝律令</span>が制定され、律令国家の仕組みが完成しました。</p>
+        <p><span class="important">710年：</span>藤原京から<span class="blank" onclick="reveal(this)">平城京</span>（奈良県）へ遷都。唐の首都である<span class="blank" onclick="reveal(this)">長安</span>を手本にし、北側には<span class="blank" onclick="reveal(this)">平城宮</span>が置かれました。都では<span class="blank" onclick="reveal(this)">和同開珎</span>などの貨幣も流通しました。</p>
+        <p><span class="important">政治の仕組み：</span></p>
+        <ul>
+            <li>中央：神事を司る神祇官と、政治を行う<span class="blank" onclick="reveal(this)">太政官</span>を中心とする「二官八省」の組織。</li>
+            <li>地方：全国を「国・郡・里」に分け、国には中央から<span class="blank" onclick="reveal(this)">国司</span>、郡には地元の豪族から<span class="blank" onclick="reveal(this)">郡司</span>が任命されました。</li>
+            <li>重要拠点：九州に<span class="blank" onclick="reveal(this)">太宰府</span>、東北に<span class="blank" onclick="reveal(this)">多賀城</span>が置かれ、全国を結ぶ<span class="blank" onclick="reveal(this)">五畿七道</span>の道路網が整備されました。</li>
+        </ul>
+    </div>
+
+    <h2>2. 人々の暮らしと税・土地制度</h2>
+    <div class="section-box">
+        <p><span class="important">公地公民と班田収授法：</span>6年ごとに作成される<span class="blank" onclick="reveal(this)">戸籍</span>に基づき、6歳以上の男女に<span class="blank" onclick="reveal(this)">口分田</span>が与えられました。本人が死ぬと国に返還する決まりでした。</p>
+        <p><span class="important">農民の重い負担：</span></p>
+        <ul>
+            <li><span class="important">租：</span>収穫量の約3％にあたる稲を納める。</li>
+            <li><span class="important">調・庸：</span>絹や布、地方の特産物を都まで自力で運んで納める。</li>
+            <li><span class="important">労役・兵役：</span>年間60日間の<span class="blank" onclick="reveal(this)">雑役</span>や、九州沿岸を守る<span class="blank" onclick="reveal(this)">防人</span>などの厳しい義務。</li>
+        </ul>
+        <p><span class="important">荘園の発生：</span>逃亡による口分田の不足を防ぐため、723年に<span class="blank" onclick="reveal(this)">三世一身の法</span>、743年に土地の永久私有を認める<span class="blank" onclick="reveal(this)">墾田永年私財法</span>が出されました。これにより貴族や寺社による私有地（<span class="blank" onclick="reveal(this)">荘園</span>）が広がり、公地公民制は崩壊に向かいました。</p>
+    </div>
+
+    <h2>3. 天平文化と仏教による国づくり</h2>
+    <div class="section-box">
+        <p><span class="important">天平文化：</span><span class="blank" onclick="reveal(this)">遣唐使</span>を通じてもたらされた唐の先進文化や仏教の影響を受けた国際色豊かな文化です。宝物は東大寺の<span class="blank" onclick="reveal(this)">正倉院</span>に納められています。</p>
+        <p><span class="important">鎮護国家思想：</span>疫病や天災を防ぐため、聖武天皇は国ごとに<span class="blank" onclick="reveal(this)">国分寺</span>（国分尼寺）を建て、平城京には<span class="blank" onclick="reveal(this)">東大寺</span>を建てて大仏を造立しました。</p>
+        <ul>
+            <li><span class="important">行基：</span>民間に仏教を広め、大仏建立に協力した僧。</li>
+            <li><span class="important">鑑真：</span>唐から苦難の末に来日し、正しく戒律を伝えた僧。</li>
+        </ul>
+        <p><span class="important">文芸・歴史書：</span>神話・歴史を記した『<span class="blank" onclick="reveal(this)">古事記</span>』や『日本書紀』、地理・産物をまとめた『<span class="blank" onclick="reveal(this)">風土記</span>』、最古の和歌集である『<span class="blank" onclick="reveal(this)">万葉集</span>』が作られました。</p>
+    </div>
+
+    <h2>4. 平安京遷都への道</h2>
+    <div class="section-box">
+        <p>仏教事業による国家財政の悪化や、強大化した寺社の政治介入を嫌った<span class="blank" onclick="reveal(this)">桓武天皇</span>は、784年に長岡京へ遷都し、さらに794年に<span class="blank" onclick="reveal(this)">平安京</span>（京都府）へ都を移して政治の刷新を図りました。</p>
+    </div>
+</div>
+
+<script>
+    function reveal(element) {
+        element.classList.toggle('reveal');
+    }
+</script>
+
+</body>
+</html>
